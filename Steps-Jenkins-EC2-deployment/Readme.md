@@ -14,6 +14,7 @@ mv /home/gauravjain449/Study-Phase-2/Private/AWS-Key/Home.pem ~/.ssh
 
 -------------
 https://gist.github.com/jsuwo/9038610
+https://www.techrepublic.com/article/how-to-install-jenkins-on-ubuntu-server-18-04/
 
 sudo apt install default-jdk-headless
 sudo apt-get install language-pack-en
@@ -26,7 +27,11 @@ verify jenkins by typing
 
 ps -ef | grep jenkins
 
-wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -.
+sudo apt-get install apache2
+sudo a2enmod proxy
+sudo a2enmod proxy_http
+
+
 
 
 
